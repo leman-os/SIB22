@@ -1,0 +1,5 @@
+rule find_size
+{
+	condition:
+		(filesize > 282KB) and (filesize < 284KB)
+}

@@ -1,0 +1,8 @@
+rule find_hex
+{
+	strings:
+		$hex_string = { 18 a0 20 a0 28 a0 ?? a0 38 a0 40 a0 48 a0 50 a0 }
+	
+	condition:
+		$hex_string
+}

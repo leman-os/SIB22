@@ -1,0 +1,9 @@
+rule find_strings
+{
+	strings:
+		$name_str = "Microsoft.Windows.FileSystem.CMD"
+		$name_str2 = "Copyright (c) Microsoft Corporation. All rights reserved."
+	condition:
+		$name_str or $name_str2
+
+}
